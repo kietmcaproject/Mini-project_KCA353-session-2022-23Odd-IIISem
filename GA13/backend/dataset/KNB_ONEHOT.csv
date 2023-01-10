@@ -1,0 +1,42 @@
+﻿Subjects Over Attributes,Mathematical Ability,Theory,Practical,Programming knowledge,Computer Basics,Critical Thinking,Aptitude Ability,Behavioral Learning,Reasoning
+Hindi,0,1,1,0,0,0,0,1,0
+English,0,1,1,0,0,0,0,1,0
+Mathematics,1,1,1,0,0,1,1,0,1
+Physics,1,1,1,0,0,1,1,0,1
+Biology,0,1,0,0,0,0,0,0,0
+Commerce,1,1,1,0,0,1,1,0,1
+Fundamental of Computers & Emerging Technologies,0,1,0,1,1,0,0,0,0
+Problem Solving using C,1,1,1,1,1,1,1,0,1
+Principles of Management & Communication,0,1,1,0,0,0,0,1,0
+Discrete Mathematics,1,0,1,0,0,1,1,0,1
+Computer Organization & Architecture,1,1,0,0,1,1,0,0,0
+
+Cryptography & Network Security,0,1,1,0,1,1,0,0,0
+Data Warehousing & Data Mining,0,1,1,1,1,0,0,0,0
+Software Project Management,0,1,0,1,1,0,0,0,1
+Cloud Computing,0,1,0,0,1,0,0,0,0
+Compiler Design,1,1,1,1,1,1,1,0,1
+
+Web Technology,0,1,1,1,1,0,0,0,0
+Big Data,0,1,0,1,1,0,0,0,0
+Simulation & Modeling,1,1,1,1,1,1,0,0,1
+Software Testing & Quality Assurance,0,1,1,1,1,1,0,0,0
+Digital Image Processing,1,1,1,1,1,1,0,0,1
+
+Privacy & Security in Online Social Media,0,1,0,0,1,1,0,0,0
+Soft Computing,0,1,0,1,1,0,0,0,0
+Pattern Recognition,1,1,1,1,1,1,1,0,1
+Data Analytics,1,1,1,0,0,1,1,0,1
+Software Quality Engineering,0,1,0,0,1,1,0,0,1
+
+Blockchain Architecture,0,1,0,0,1,0,0,0,0
+Neural Network,1,1,1,1,1,1,0,0,1
+Internet of Things,0,1,1,1,1,0,0,0,0
+Modern Application Development,0,0,1,1,1,0,0,0,1
+Distributed Database Systems,0,1,0,1,1,0,0,0,0
+
+Mobile Computing,0,0,1,1,1,0,0,0,1
+Computer Graphics and Animation,1,1,1,0,1,0,0,0,0
+Natural Language Processing,1,1,1,1,1,1,0,0,1
+Machine Learning,1,1,1,1,1,1,1,0,1
+Quantum Computing,0,1,0,1,1,0,0,0,0

@@ -1,0 +1,44 @@
+﻿Subjects Over Attributes,Mathematical Ability,Theory,Practical,Programming knowledge,Computer Basics,Critical Thinking,Aptitude Ability,Behavioral Learning,Reasoning
+
+Hindi,0.1,0.8,0.3,0.0,0.0,0.3,0.1,0.9,0.1
+English,0.1,0.8,0.3,0.0,0.0,0.3,0.1,0.9,0.1
+Mathematics,1.0,0.4,0.8,0.2,0.2,0.9,0.9,0.2,0.8
+Physics,0.6,0.5,0.7,0.3,0.1,0.8,0.4,0.3,0.7
+Biology,0.0,0.8,0.2,0.0,0.0,0.3,0.2,0.6,0.4
+Commerce,0.4,0.7,0.6,0.3,0.2,0.5,0.3,0.0,0.5
+
+Fundamental of Computers & Emerging Technologies,0.1,0.8,0.2,0.4,0.7,0.1,0.2,0.0,0.2
+Problem Solving using C,0.7,0.4,0.9,0.7,0.8,0.6,0.8,0.0,0.6
+Principles of Management & Communication,0.0,0.6,0.6,0.0,0.0,0.1,0.1,0.8,0.0
+Discrete Mathematics,1.0,0.4,0.8,0.0,0.0,0.9,0.5,0.0,0.5
+Computer Organization & Architecture,0.4,0.6,0.6,0.3,0.9,0.6,0.2,0.1,0.1
+
+Cryptography & Network Security,0.4,0.7,0.4,0.7,0.8,0.7,0.3,0.0,0.1
+Data Warehousing & Data Mining,0.4,0.6,0.4,0.8,0.9,0.6,0.2,0.0,0.2
+Software Project Management,0.1,0.9,0.3,0.2,0.7,0.2,0.1,0.0,0.1
+Cloud Computing,0.0,1.0,0.2,0.5,0.8,0.2,0.0,0.0,0.0
+Compiler Design,0.9,0.7,0.9,0.9,1.0,0.8,0.4,0.0,0.3
+
+Web Technology,0.0,0.5,0.6,0.9,0.9,0.7,0.2,0.0,0.0
+Big Data,0.2,0.7,0.5,0.6,0.7,0.5,0.5,0.0,0.4
+Simulation & Modeling,1.0,0.6,0.8,0.7,0.8,0.9,0.3,0.0,0.7
+Software Testing & Quality Assurance,0.2,0.8,0.6,0.6,0.7,0.8,0.3,0.0,0.3
+Digital Image Processing,0.8,0.8,0.9,0.9,0.8,0.9,0.3,0.0,0.4
+
+Privacy & Security in Online Social Media,0.0,1.0,0.3,0.2,0.7,0.6,0.2,0.0,0.0
+Soft Computing,0.3,0.8,0.3,0.6,0.9,0.3,0.2,0.0,0.1
+Pattern Recognition,0.9,0.5,0.6,0.6,0.8,0.8,0.2,0.0,0.7
+Data Analytics,0.7,0.4,0.8,0.6,0.6,0.9,0.5,0.0,0.4
+Software Quality Engineering,0.2,0.8,0.6,0.6,0.7,0.8,0.3,0.0,0.3
+
+Blockchain Architecture,0.6,0.6,0.4,0.5,0.7,0.6,0.2,0.0,0.2
+Neural Network,0.8,0.5,0.9,0.9,1.0,0.6,0.5,0.0,0.6
+Internet of Things,0.2,0.7,0.5,0.8,0.9,0.6,0.3,0.0,0.2
+Modern Application Development,0.1,0.4,0.8,0.8,0.9,0.4,0.2,0.0,0.1
+Distributed Database Systems,0.4,0.7,0.6,0.5,0.8,0.6,0.3,0.0,0.2
+
+Mobile Computing,0.2,0.4,0.8,0.8,0.9,0.4,0.2,0.0,0.3
+Computer Graphics and Animation,0.9,0.8,0.8,0.6,0.8,0.8,0.7,0.0,0.2
+Natural Language Processing,0.5,0.7,0.6,0.9,0.9,0.7,0.2,0.0,0.4
+Machine Learning,0.8,0.7,0.6,0.9,0.9,0.7,0.9,0.0,0.8
+Quantum Computing,0.4,0.8,0.1,0.3,0.8,0.3,0.2,0.0,0.2
