@@ -1,0 +1,147 @@
+.banner{
+    position: relative;
+}
+.banner img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.banner-main {
+  position: absolute;
+  top: 35%;
+  color: #000000;
+  padding: 0 30px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5vh;
+  line-height: 46px;
+  letter-spacing: 0.15em;
+}
+
+.banner-sub {
+  position: absolute;
+  padding: 0 100px;
+  width: 80%;
+  top: 55%;
+  font-family: "Arial Rounded MT Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3vh;
+  line-height: 37px;
+  letter-spacing: 0.02em;
+  color: #FFFEFE;
+}
+
+.about-approach
+{
+    position: relative;
+    padding: 10px 0;
+}
+.about-approach h1{
+  position: relative;
+  width: 100%;
+  height: 111px;
+  top: 30px;
+  font-family: "Arial Rounded MT Bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 111px;
+  color: #c2854d;
+}
+
+
+.about-approach h3{
+    position: relative;
+    padding: 5px 5px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3em;
+    line-height: 74px;
+    letter-spacing: 0.15em;
+    color: #E78B49;
+    text-align: center;
+  }
+
+  .about-approach h4{
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    padding: 15px 20px;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 37px;
+    text-align: center;
+    color: #898383;
+  }
+  .about-members{
+      position: relative;
+      padding: 50px;
+    background: #161616;
+  }
+  .about-members h1{
+    font-family: 'Arial Rounded MT Bold';
+    font-style: normal;
+    top: 50px;
+    text-align: center;
+    color: #C2854D;
+  }
+
+
+  .row{
+    box-sizing: border-box;
+ }
+.column {
+    float: left;
+    width: 25%;
+  }
+
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .last-1{
+    position: relative;
+    padding: 5px;
+    margin-left: 20%;
+    margin-top: 25%;
+    margin-bottom: 25%;
+  }
+
+  @media screen and (max-width: 800px)
+  {
+    .banner-main{
+    top: 20%;
+    font-size: 1em;
+    line-height: normal;
+    letter-spacing: 0;
+      }
+
+      .banner-sub{
+      position: absolute;
+      padding: 0 30px;
+      width: 80%;
+      top: 50%;
+      font-family: "Arial Rounded MT Bold";
+      font-style: normal;
+      font-size: 0.75em;
+      line-height: normal; 
+      letter-spacing: 0;
+      color: #FFFEFE;
+      }
+      .column{
+          float: none;
+          height: auto;
+          width: auto;
+            }
+            .column img{
+                width: 80%;
+            }
+
+  }

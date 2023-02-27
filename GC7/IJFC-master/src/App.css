@@ -1,0 +1,188 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.m-60 {
+  margin: 60px 0px;
+}
+
+h1 {
+  font-size: 40px !important;
+  line-height: 48px !important;
+  font-weight: 700 !important;
+  text-align: center;
+  margin-bottom: 40px !important;
+  color: #636060;
+}
+
+h3 {
+  font-size: 30px !important;
+  line-height: 38px !important;
+  color: #636060;
+}
+
+p{
+  text-align: justify;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0px;
+}
+
+/* .MuiGrid-container {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.MuiGrid-item {
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.wrapper-banner img {
+  width: 100%;
+  position: relative;
+}
+.wrapper-banner p {
+  position: absolute;
+  top: 50%;
+  color: #524b4ba3;
+  font-size: 30px;
+  padding: 0 30px;
+  letter-spacing: 5px;
+}
+.img-mission {
+  text-align: center;
+}
+.mission img {
+  width: auto;
+  max-height: 370px;
+}
+.mission h3 {
+  text-align: center;
+}
+.mission h3 img {
+  max-width: 70px;
+  margin-bottom: -18px;
+  margin-right: 15px;
+}
+.news {
+  background-color: #292424;
+  padding: 30px 0px;
+}
+.news h1{
+  color: #A9A1A1;
+}
+.news img {
+  width: 100%;
+  margin-bottom: 20px;
+  max-height: 205px;
+}
+.news h3 {
+  color: #636060;
+  font-size: 24px !important;
+  line-height: 32px !important;
+}
+.news p {
+  color: #636060;
+  margin-top: 5px;
+}
+.event ul{
+  display: flex;
+}
+
+.event-date {
+  margin-right: 40px;
+}
+
+.event-date p {
+  margin: 0;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 18px;
+}
+
+.event-date img {
+  border: 8px solid #DD1100;
+  max-width: 40px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.gallery img {
+  width: 100%;
+  max-height: 313px;
+}
+.inner-about {
+  position: relative;
+}
+.inner-about img {
+  width: 100%;
+}
+.inner-about p {
+  color: #E78B49;
+  font-size: 30px;
+  padding: 0 30px;
+  letter-spacing: 5px;
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@media screen and (max-width: 800px)
+{
+.wrapper-banner p {
+  position: absolute;
+  top: 10%;
+  color: #524b4ba3;
+  font-size: 15px;
+  padding: 0 30px;
+  letter-spacing: normal;
+}
+}

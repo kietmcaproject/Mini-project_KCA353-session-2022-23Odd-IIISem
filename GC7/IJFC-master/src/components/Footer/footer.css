@@ -1,0 +1,47 @@
+footer {
+    background-color: #161616;
+    padding: 50px 0px;
+}
+footer h3 {
+    color: #FFFDFD;
+    margin-bottom: 30px !important;
+    font-size: 26px !important;
+}
+footer p, footer ul li{
+    color: #DAD7D7;
+}
+.footer-inner {
+    max-width: 400px;
+}
+.footer-inner:first-child{
+    margin-bottom: 50px;
+}
+.f-right {
+    margin: 0 auto;
+}
+footer ul li {
+    margin-bottom: 10px;
+}
+.s-social {
+    display: flex;
+    align-items: center;
+}
+.s-social img {
+    margin-right: 15px;
+}
+.do-subscribe {
+    margin-top: 20px;
+}
+.do-subscribe input{
+    color: #000000;
+    background-color: #D9D9D9;
+    border-radius: 8px;
+    height: 10px;
+}
+.do-subscribe button {
+    background-color: #DD1100;
+    color: #ffffff;
+    margin-left: 7px;
+    padding: 10px 30px;
+    border-radius: 8px;
+}

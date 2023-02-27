@@ -1,0 +1,74 @@
+.gallery-banner-main {
+  position: absolute;
+  top: 10%;
+  color: #000000;
+  padding: 0 50px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.5vh;
+  line-height: 46px;
+  letter-spacing: 0.15em;
+}
+
+.gallery-banner-sub {
+  position: absolute;
+  top: 15%;
+  font-family: Arial;
+  padding: 0 50px;
+  font-size: 96px;
+  font-weight: 400;
+  line-height: 110px;
+  letter-spacing: 0.25em;
+  text-align: left;
+}
+
+.gallery-heading{
+    font-family: Arial;
+font-size: 64px;
+font-weight: 400;
+line-height: 74px;
+letter-spacing: 0.15em;
+text-align: left;
+color: #C2854D;
+padding: 10px;
+
+}
+
+.cover {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .cover .cover-image {
+    width: 50%;
+  }
+  
+  .cover img {
+    width: calc(100% - (40px * 2));
+    margin: 20px;
+  }
+
+  @media screen and (max-width: 800px)
+  {
+    .gallery-banner-main{
+    top: 15%;
+    font-size: 1em;
+    line-height: normal;
+    letter-spacing: 0;
+      }
+
+      .gallery-banner-sub{
+      position: absolute;
+      top: 30%;
+      font-style: normal;
+      font-size: 1.5em;
+      line-height: normal; 
+      letter-spacing: 0;
+      }
+      .gallery-heading{
+          font-size: 1em;
+          letter-spacing: 0;
+          line-height: normal;
+      }
+  }
