@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+     integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="icon" type="image/x-icon" href="./images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Openboard_clone</title>
+</head>
+<body>
+    <div class="options-cont">
+         <i class="fas fa-bars"></i>
+        </div>
+    <div class="tools-cont scale-tools">
+        <img class="pencil" src="images/pencil.png">
+        <img class="eraser" src="images/eraser.png">
+        <img  class="download" src="images/download.png">
+        <img class="upload" src="images/upload.png">
+        <img class="sticky-note" src="images/sticky-note.png">  
+        <img class="undo" src="images/undo.png">
+        <img class="redo" src="images/redo.png">
+    </div>
+    <div class="pencil-tool-cont">
+        <div class="pencil-width-cont">
+            <input type="range" min="2" max="20" value="8"class="pencil-width">
+        </div>
+        <div class="pencil-color-cont">
+            <div class="black pencil-color"></div>
+            <div class="blue pencil-color"></div>
+            <div class="red pencil-color"></div>
+            <div class="pink pencil-color"></div>
+            <div class="brown pencil-color"></div>
+        </div>
+    </div>
+    <div class="eraser-tool-cont">
+        <input type="range" min="2" max="50" value="4" class="eraser-width">
+    </div>
+   <!-- <div class="sticky-cont">
+        <div class="header-cont">
+            <div class="minimize"></div>
+            <div class="remove"></div>
+        </div>
+        <div class="note-cont">
+           <textarea  cols="40" rows="13"></textarea>
+        </div>
+    </div> -->
+    <canvas></canvas>
+    
+    <script src="https://cdn.socket.io/4.5.0/socket.io.min.js" 
+    integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k" crossorigin="anonymous"></script>
+    <script>
+        let socket = io.connect("http://localhost:5000");
+    </script>
+    <script src="./tools.js"></script>
+    <script src="./canvas.js"></script>
+</body>
+</html>
