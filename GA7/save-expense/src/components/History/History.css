@@ -1,0 +1,119 @@
+.transPage {
+  background-color: rgb(234, 250, 225);
+  height: 1040px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  fill-opacity: inherit;
+  /* Needed to position the navbar */
+  position: relative;
+}
+.new-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-expense__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 20px;
+}
+
+.new-expense__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-expense__control select {
+  font: inherit;
+  font-size: larger;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-expense__actions {
+  text-align: right;
+}
+
+.new-expense {
+  background-color: cadetblue;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-expense button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid green;
+  background-color: green;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.new-expense button:hover,
+.new-expense button:active {
+  background-color: green;
+  border-color: green;
+}
+
+.new-expense button.alternative {
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.new-expense button.alternative:hover,
+.new-expense button.alternative:active {
+  background-color: wheat;
+}
+
+.show {
+  background-color: whitesmoke;
+}
+.sourceIncome {
+  font-weight: bold;
+  color: green;
+  background-color: lightyellow;
+  justify-content: center;
+}
+.sourceExpense {
+  font-weight: bold;
+  color: red;
+  background-color: rgb(218, 210, 211);
+  justify-items: center;
+}
+
+.separate {
+  color: black solid;
+}
+
+.td-left {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.td-right {
+  text-align: right;
+  padding-right: 100px;
+}
+
+.content-table {
+  width: 100%;
+}

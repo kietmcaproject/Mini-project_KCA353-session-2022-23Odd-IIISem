@@ -1,0 +1,119 @@
+.income-page {
+  background-image: url("../Images/spendings.png");
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.new-expense__controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-expense__control label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 20px;
+  color: black solid 2px;
+  padding: 2px;
+  margin: 3px;
+}
+
+.new-expense__control input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-expense__control select {
+  font: inherit;
+  font-size: larger;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+  color: darkred;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.new-expense__actions {
+  text-align: right;
+}
+
+.new-expense {
+  background-color: #a892ee;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 50rem;
+  max-width: 95%;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.new-expense button {
+  font: inherit;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  margin-right: 1rem;
+}
+
+.new-expense button:hover,
+.new-expense button:active {
+  background-color: #510674;
+  border-color: #510674;
+}
+
+.new-expense button.alternative {
+  color: #220131;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.new-expense button.alternative:hover,
+.new-expense button.alternative:active {
+  background-color: #ddb3f8;
+}
+.fetch-details {
+  padding-bottom: 5px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: solid black;
+  background: rgba(145, 66, 74, 0.199);
+}
+.swal-title {
+  padding: 17px;
+  margin: 27px;
+  text-align: center;
+}
+.swal-text {
+  padding: 17px;
+  margin: 27px;
+  text-align: center;
+  color: solid green;
+  font-size: 24px;
+  font-weight: bold;
+}
+.swal {
+  align-items: center;
+  background-color: beige;
+}

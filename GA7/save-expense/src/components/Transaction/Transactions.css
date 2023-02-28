@@ -1,0 +1,23 @@
+.transPage {
+  background-color: rgb(234, 250, 225);
+  height: 1040px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  fill-opacity: inherit;
+  /* Needed to position the navbar */
+  position: relative;
+}
+
+.td-left {
+  text-align: left;
+  padding-left: 100px;
+}
+
+.td-right {
+  text-align: right;
+  padding-right: 100px;
+}
+
+.content-table {
+  width: 100%;
+}
