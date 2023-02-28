@@ -1,0 +1,12 @@
+1.Nodejs
+2.Python 3
+3.tailwindcss
+4.React router
+5.flask
+6.flask-sqlALchemy
+7.pickle
+8.numpy
+9.scikit-learn
+10.pandas
+11.axios
+12.flask-cors
