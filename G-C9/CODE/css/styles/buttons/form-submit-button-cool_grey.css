@@ -1,0 +1,55 @@
+/********* Cool Grey **********/
+
+.form-submit-button-cool_grey{
+
+	cursor: pointer;
+	
+    -moz-border-radius:.3em;
+    -webkit-border-radius:.3em;
+    border-radius:.3em;
+
+    padding:6px 18px;
+
+    color: #f9fbfd;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+
+    text-shadow:0 -1px 0px #414346;
+
+    border:1px solid #60646c;
+
+    -moz-box-shadow:inset 0 1px 0 0 rgba(255, 255, 255, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.40);
+    -webkit-box-shadow:inset 0 1px 0 0 rgba(255, 255, 255, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.40);
+    box-shadow:inset 0 1px 0 0 rgba(255, 255, 255, 0.20), 0 1px 1px 0 rgba(0, 0, 0, 0.40);
+
+    background: #787b83; /* old browsers */
+    background: -moz-linear-gradient(top, #9799a0 0%, #787b83 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9799a0), color-stop(100%,#787b83)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9799a0', endColorstr='#787b83',GradientType=0 ); /* ie */
+}
+
+.form-submit-button-cool_grey:hover{
+    
+    color: #f9fbfd !important;
+    border:1px solid #60646c !important;
+    background: #84878f; /* old browsers */
+    background: -moz-linear-gradient(top, #b2b6c0 0%, #84878f 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b2b6c0), color-stop(100%,#84878f)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b2b6c0', endColorstr='#84878f',GradientType=0 ); /* ie */
+}
+
+.form-submit-button-cool_grey:active{
+	
+	color: #f9fbfd !important;
+	border:1px solid #60646c !important;
+    -moz-box-shadow:inset 0 2px 5px 0 rgba(0,0,0,.34);
+    -webkit-box-shadow:inset 0 2px 5px 0 rgba(0,0,0,.34);
+    box-shadow:inset 0 2px 5px 0 rgba(0,0,0,.34);
+
+    background: #60646c; /* old browsers */
+    background: -moz-linear-gradient(top, #71747f 0%, #60646c 100%); /* firefox */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#71747f), color-stop(100%,#60646c)); /* webkit */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#71747f', endColorstr='#60646c',GradientType=0 ); /* ie */
+}
+
