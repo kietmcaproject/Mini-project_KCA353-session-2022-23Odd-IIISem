@@ -60,19 +60,3 @@ It can also predict on saved videos
 Or by using a live camera
 ```sh
   python live_cam_predict.py
-```
-Here are some test examples:
-
-<!-- Improving Model Performance -->
-## Improving Model Performance
-
-### Baseline Model
-Used [neha01 model](https://github.com/neha01/Realtime-Emotion-Detection) as baseline model which is based on a 3 block convolutional neural network architecture. It achieved ~57.5% test accuracy on FER2013 dataset.
-
-### Data Cleaning
-Because of alot of mislabeled images in FER2013 dataset, we found that using FERPlus' labels is a better option to train the model for better performance.  
-Here are some examples of the FER vs FER+ labels extracted from the mentioned paper in [FER+ repo](https://github.com/microsoft/FERPlus) (FER top, FER+ bottom):
-<p align="center">
-  <img width="600" src="https://raw.githubusercontent.com/Microsoft/FERPlus/master/FER+vsFER.png">
-</p>
-We also added 2 more blocks to the baseline model without regularization thus overall accuracy increased by ~14.
