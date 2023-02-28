@@ -76,39 +76,3 @@ Here are some examples of the FER vs FER+ labels extracted from the mentioned pa
   <img width="600" src="https://raw.githubusercontent.com/Microsoft/FERPlus/master/FER+vsFER.png">
 </p>
 We also added 2 more blocks to the baseline model without regularization thus overall accuracy increased by ~14.
-
-### Regularization
-#### 1. Data Augmentation
-Data augmentation is used to artifically create images, these images are added to the original training images to increase the total training set size.  
-We implemented data augmentation with keras [ImageDataGenerator](https://keras.io/api/preprocessing/image/#imagedatagenerator-class) class and tuned its parameters.    By doing so, we were able to raise the test accuracy by ~7%.  
-The trick was not to overuse it so that the model could still learn from the training images.
-
-#### 2. Batch Normalization and Dropout Layers
-Batch normalization applies a transformation that maintains the mean output close to 0 and the output standard deviation close to 1 which makes training faster and more stable.  
-Dropout layers randomly chooses percentage of input neurons to drop while training such that it has a regularization effect.  
-Both layers are added to our model improving performance by ~5%
-
-<!-- Performance Analysis -->
-## Performance Analysis
-Plotting the accuracy and loss of the trained model is always the first step to anaylze how the the model is performing. Here are two pictures illustrating the difference in performance between one of the initial architectures and the final architecture.
-
-<p align="center">
-  <img src=https://user-images.githubusercontent.com/43937873/96019814-5d913480-0e4d-11eb-8679-b278ab47840d.png alt="drawing" width="350" height="330"/>
-  <img src=https://user-images.githubusercontent.com/40613682/96056745-aebe1a00-0e87-11eb-9198-ceb4e274b50b.png alt="drawing" width="400" height="330"/> 
-</p>
-
-The plot on the left is for our initial architecture, we can see that the model started to overfit in the early epochs which meant that either that model wasn't the best fit for the dataset or that the dataset itself wasn't sufficient for the model to learn enough features to be able to predict with high accuracy.  
-On the other hand, the plot on the right shows that the cross-validation accuracy was keeping up with the training accuracy up to the 80s which is a good sign and it's certainly an improved performance from the one on the left.  
-Our final architecture had a **test accuracy of ~84%**. The architecture is a combination of these 3 blocks:
-
-
-However, depending on only the accuracy and loss of the trained model doesn't always give a full understanding of the model's performance.  
-There are more advanced metrics that can be used like the F1 score which we decided to use. The F1 score is calculated using two pre-calculated metrics: precision and recall. These two metrics utilize the true positive, false positive and false negative predicted examples which are best visualised using the confusion matrix.  
-You can checkout (https://medium.com/analytics-vidhya/confusion-matrix-accuracy-precision-recall-f1-score-ade299cf63cd) for a full and clear explanation.  
-Since we designed our model to recognise the 7 universal facial emotions and the FERPlus dataset had an 8th class for 'contempt' emotions, we decided to add all contempt class' examples to the 'neutral' class rather than throwing this data away.  
-Here's how our confusion matrix for the 7 classes looks like, the X-axis is for predicted labels and the Y-axis is for the true ones.  
-**F1 score = 0.8.**
-<p align="center">
-<img align="center" src=https://user-images.githubusercontent.com/43937873/96011743-9a582e00-0e43-11eb-9b95-eba91f99aa6f.png alt="drawing"/>
-</p>
-
