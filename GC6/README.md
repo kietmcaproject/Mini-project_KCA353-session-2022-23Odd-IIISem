@@ -62,13 +62,6 @@ Or by using a live camera
   python live_cam_predict.py
 ```
 Here are some test examples:
-<p align="center">
-  <img src=https://user-images.githubusercontent.com/40613682/96073810-7c241980-0ea7-11eb-848d-29b56ecf4fc1.png alt="drawing" width="220" height="230"/>
-  <img src=https://user-images.githubusercontent.com/40613682/96074052-fc4a7f00-0ea7-11eb-8fca-4baf225ed327.png alt="drawing" width="220" height="230"/> 
-  <img src=https://user-images.githubusercontent.com/40613682/96074205-67945100-0ea8-11eb-9e43-5b9124c94275.png alt="drawing" width="220" height="230"/>
-  <img src=https://user-images.githubusercontent.com/40613682/96074354-ca85e800-0ea8-11eb-86da-749d3653ddbf.png alt="drawing" width="220" height="230"/>
-  <img src=https://user-images.githubusercontent.com/40613682/96076039-b9d77100-0eac-11eb-93e0-26ca0f6e678d.png alt="drawing" width="220" height="230"/>
-</p>
 
 <!-- Improving Model Performance -->
 ## Improving Model Performance
@@ -108,11 +101,6 @@ The plot on the left is for our initial architecture, we can see that the model 
 On the other hand, the plot on the right shows that the cross-validation accuracy was keeping up with the training accuracy up to the 80s which is a good sign and it's certainly an improved performance from the one on the left.  
 Our final architecture had a **test accuracy of ~84%**. The architecture is a combination of these 3 blocks:
 
-<p align="center">
-  <img src=https://user-images.githubusercontent.com/43937873/96025489-7aca0100-0e55-11eb-8b08-ed17fcf30ba7.png alt="drawing" width="310"/>
-  <img src=https://user-images.githubusercontent.com/43937873/96025536-8caba400-0e55-11eb-8f27-29e9182459ac.png alt="drawing" width="310"/>
-  <img src=https://user-images.githubusercontent.com/43937873/96025592-9df4b080-0e55-11eb-917f-19b17820c4e0.png alt="drawing" width="310"/>
-</p>
 
 However, depending on only the accuracy and loss of the trained model doesn't always give a full understanding of the model's performance.  
 There are more advanced metrics that can be used like the F1 score which we decided to use. The F1 score is calculated using two pre-calculated metrics: precision and recall. These two metrics utilize the true positive, false positive and false negative predicted examples which are best visualised using the confusion matrix.  
@@ -124,9 +112,3 @@ Here's how our confusion matrix for the 7 classes looks like, the X-axis is for 
 <img align="center" src=https://user-images.githubusercontent.com/43937873/96011743-9a582e00-0e43-11eb-9b95-eba91f99aa6f.png alt="drawing"/>
 </p>
 
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-- https://www.coursera.org/learn/convolutional-neural-networks
-- https://machinelearningmastery.com/image-augmentation-deep-learning-keras/
-- https://machinelearningmastery.com/improve-deep-learning-performance/
-- https://medium.com/analytics-vidhya/deep-learning/home
