@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	 <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="E:\Project 2/Index.css">
+	
+	<title>Home</title>
+
+</head>
+<body>
+	<script type="text/javascript" src="index.js"></script> 
+
+	<nav class="navbar navbar-expand-lg navbar-light " style="background-color: darkturquoise;">
+  <div class="container-fluid">
+   
+    	 <div class="top" style="margin-left: 30px;">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Staff Login</a>
+    <a href="#">Admin Login</a>
+  </div>
+  <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+   <p class="navbar-brand" href="#" style="color: white; font-size: 25px; padding-left: 30px;">
+    	<img src="moon 2.png" height="20px" width="20px"\> Moon knight cafe</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="margin-left: -30px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home" style="padding-right: 5px" aria-hidden="true"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Gallery</a>
+        </li>
+      </ul>
+      <div id="id01" class="cont_principal">
+
+  <div class="cont_centrar">
+  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="cont_login">
+    <form action="server.php" method="post">
+    <div class="cont_tabs_login">
+      <ul class='ul_tabs'>
+      	 
+        <li class="active"><a href="#" onclick="sign_in()">SIGN IN</a>
+
+        <span class="linea_bajo_nom"></span>
+        </li>
+        <li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom">
+        	
+        </span>
+        </li>
+      </ul>
+      </div>
+  <div class="cont_text_inputs">
+      <input type="text" class="input_form_sign " placeholder="NAME" name="name" />
+    
+    <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" name="email" />
+
+    <input type="password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="password" />  
+   <input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass" />
+    
+    <a href="#" class="link_forgot_pass d_block" >Forgot Password ?</a>    
+<div class="terms_and_cons d_none">
+    <p><input type="checkbox" name="terms_and_cons" /> <label for="terms_and_cons">Accept  Terms and Conditions.</label></p>
+  
+    </div>
+      </div>
+<div class="cont_btn">
+     <button class="btn_sign" >SIGN IN</button>
+    
+      
+      </div>
+      
+    </form>
+    </div>
+    
+  </div>
+  
+
+</div>
+   <p style="color: white;position: relative;left: 170px;top: 7px;cursor: pointer;">Cart</p><i style="font-size: 27px;" class="fa fa-shopping-cart" aria-hidden="true"></i><button class="signup"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;"><i class="fa fa-user" style="padding-right: 5px;" aria-hidden="true"></i>Sign Up</button>
+
+    </div>
+  </div>
+
+</nav>
+
+<div class="container">
+<img src="pngegg.png" width="100%" alt="..."   >
+    <div class="content">
+          <p>Welcome to</p><br><br>
+          <h2>Moon Knight Cafe</h2>
+          <p style="font-size: 20px; color: grey">A speciality food is a food that is typically considerd as a "unique and high value food item made in small quantities from high quality ingredients".</p>
+          	 <div class="containers">
+               <div class="center">
+                 <button class="btn">
+                  <svg width="180px" height="60px" viewBox="0 0 180 60" class="border">
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="bg-line" />
+                  <polyline points="179,1 179,59 1,59 1,1 179,1" class="hl-line" />
+                  </svg>
+                 <span><a href="E:\Project 2\dishes.html" style="position: relative; text-decoration: none;color: black"> Order now</a></span>
+                 
+               </div>
+            </div>
+    </div>
+  
+</div><br><br><br>
+<div style="padding-left: 150px;padding-top: 50px;">
+<h2>About us</h2>
+<p class="about">Our mission at Biggies Pizza is not only to have great tasting food, but have efficient and friendly service because customer satisfaction is paramount. We want to be the restaurant choice for people from all walks of life.
+
+Try Biggies Pizza today. You can use ouar Order Online feature and we will deliver your food right before you get off your computer.</p></div>
+
+      <div class="about_img" style="padding-left: 750px;margin-top: -300px;word-spacing: 20px; ">
+	      <img src="drink.png" height: 200px >
+	      <img src="burger.png" style="margin-top: 150px;">
+      </div><br>
+      <hr><br>
+      <div>
+      	<div class="process">
+      	<h4 style="color: red">OUR PROCESS</h4>
+      	<h3>How Does It Works</h3><br><br>
+        </div> <header style="position: relative;height: 320px; width: 1100px; left: 0px;">
+        <img src="process.png" width="100%" height="60%"></div>
+    </header>
+    
+<div class="allheader" style="width: 100%">
+		<div class="overview" id="dt" style="position: relative;top: -10px;">
+		<h5><img src="moon 2.png" height="20px" width="20px"> Moon Knight cafe</h5><hr>
+		
+	</div>
+	<div class="Download" id="dt">
+		<h2> Get to know us</h2><hr><div style="color: white;">
+
+		<p><STRONG>Address:</strong> Oppo. KIET Institution, Muradnagar</p>
+		<p><strong>Mobile No.:</strong> 95*****09</p>
+	</div></div>
+
+	<div class="Links" id="dt">
+		<h2>Useful Links</h2><hr>
+		<a class="imgs" href="#">About us</a><br>
+		<a class="imgs" href="#">Feedback</a><br>
+		<a class="imgs" href="#">Privacy Policy</a><br>
+		
+	</div>
+	<div class="Media" id="dt">
+		<h2>Follow us</h2><hr>
+		<a class="imgs" href="#">Facebook</a><br>
+		<a class="imgs" href="#">Twitter</i></a><br>
+		<a class="imgs" href="#">Instagram</a><br>
+		
+
+	</div>
+          </div>
+          <div class="copyright">
+          	<p style="font-family: serif;"><strong>Moon Knight Cafe</p>
+          </div>
+
+
+</body>
+</html>

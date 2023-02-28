@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration form</title>
+</head>
+<body>
+	<style type="text/css">
+		div{
+			margin-left: 500px;
+			margin-top: 200px;
+			line-height: 2em;
+			border: 1px solid black;
+			border-radius: 5px;
+			margin-right: 600px;
+			 background: linear-gradient(to right, #a1ffce, #faffd1);
+			 border: 1px solid black ;
+  background-color: white;
+  box-shadow: 10px 10px 5px #aaaaaa;
+
+
+		}
+		.form{
+			margin: 20px 20px 20px 20px;
+		}.dtl{
+         color: black;
+		}
+		input{
+             line-height: 1.5em;
+		}
+		.btn{
+			margin-left: 140px; font-size: 24px;   background: linear-gradient(to right, #a1ffce, #faffd1); border-radius: 10px; background-color: white;
+               box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+               border-color: gold
+                 border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+
+		}
+		.btn:hover{
+                    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
+                    color: black;
+		}
+	</style>
+	<div>
+		<header class="form">
+		<h1 style="text-align: center;">
+		Registration form</h1><hr><br>
+		<header class="dtl">
+	<label>First Name: </label>
+	<input type="text" name="F_name" placeholder=" Enter First Name" required><br>
+	<label>Last Name: </label>
+	<input type="text" name="L_Name" placeholder="Enter Last Name"><br>
+	<label>E-mail: </label>
+	<input type="text" name="E_mail" placeholder="Enter E-mail"><br>
+	<label>Gender:</label>
+	<input type="radio" name="gender" value="male">male
+	<input type="radio" name="gender" value="female">female<br>
+	<label>Date of Birth(D.O.B): </label>
+	<input type="Date" name="select_date"><br>
+	<label>Extra carricular activities:</label><br>
+	<label>Dance</label>
+	<input type="radio" name="select" value="Dance">
+	<label>Singing</label>
+	<input type="radio" name="select" value="Singing">
+	<label>Anchoring</label>
+	<input type="radio" name="select" value="Anchoring"><br>
+	<label>Password: </label>
+	<input type="text" name="pswd" placeholder="Enter Password"><br>
+	<label>Re-enter Password: </label>
+	<input type="text" name="pswd" placeholder="Enter Password" ><br><br>
+	<input class="btn" type="Submit" name="btn" value="Submit" ></header>
+</header>
+	</div>
+
+</body>
+</html>

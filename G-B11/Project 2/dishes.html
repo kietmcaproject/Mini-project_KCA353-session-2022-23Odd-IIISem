@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="E:\Project 2/Index.css">
+  <script type="text/javascript" src="index.js"></script>
+
+	<title>Dishes</title>
+	<style type="text/css">
+		.nav-item{
+              padding-right: 40px;
+		}
+	li a:hover{
+            border: 1px solid black;
+            background: linear-gradient(to right, #abbaab, #ffffff);
+            transition-delay: 1s;
+           
+		}
+		.card{
+			position: static;
+			display: inline-grid;
+			text-decoration-style: none;
+		  word-spacing: 40px ;	
+		  margin-left:70px; 
+		  border-radius: 10px;
+		}
+		.card-body{
+	           margin-left: -5px;
+		}
+		  
+		  .card-img-top{
+		  	width: 287px;
+		  	height: 250px;
+		  	border-top-left-radius: 10px;
+		  	border-top-right-radius: 10px;
+
+		  }
+		  .card:hover{
+		  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+		  	transition-duration: 0.5s;
+		  	cursor: pointer;
+		  }
+		  .btn-outline-success{
+		  	padding: 5px 20px 5px 20px;
+		  	margin-left: 30px;
+		  	border-radius: 5px;
+		  	transition-duration: 0.5s;
+		  }
+		  .close{
+	position: relative;
+	top: 5px;
+	left: -10px;
+	font-size: 25px;
+   cursor: pointer;
+}
+
+/* a:link, a:visited {
+  transition: color 0.15s ease 0s, border-color 0.15s ease 0s, background-color 0.15s ease 0s;
+} */
+
+.quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.quantity__minus,
+.quantity__plus {
+  display: block;
+  width: 22px;
+  height: 23px;
+  margin: 0;
+  background: #dee0ee;
+  text-decoration: none;
+  text-align: center;
+  line-height: 23px;
+}
+.quantity__minus:hover,
+.quantity__plus:hover {
+  background: #575b71;
+  color: #fff;
+} 
+.quantity__minus {
+  border-radius: 3px 0 0 3px;
+}
+.quantity__plus {
+  border-radius: 0 3px 3px 0;
+}
+.quantity__input {
+  width: 32px;
+  height: 19px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 2px solid #dee0ee;
+  border-bottom: 2px solid #dee0ee;
+  border-left: 1px solid #dee0ee;
+  border-right: 2px solid #dee0ee;
+  background: #fff;
+  color: #8184a1;
+}
+.quantity__minus:link,
+.quantity__plus:link {
+  color: #8184a1;
+} 
+.quantity__minus:visited,
+.quantity__plus:visited {
+  color: #fff;
+}
+.qty{
+  font-size: 16px;
+  position: relative;
+  top: 5px;
+}
+.btn-outline-success{
+  cursor: pointer;
+}
+
+
+	</style>
+
+     
+</script> 
+
+</head>
+<body>
+
+
+
+	<nav class="navbar navbar-expand-lg navbar-light " style="background-color: darkturquoise;">
+  <div class="container-fluid">
+   
+    	 <div class="top" style="margin-left: 30px;">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Staff Login</a>
+    <a href="#">Admin Login</a>
+  </div>
+  <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+   <p class="navbar-brand" href="#" style="color: white; font-size: 25px; padding-left: 30px;">
+    	<img src="moon 2.png" height="20px" width="20px"\> Moon knight cafe</p>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav" style="margin-left: -30px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="E:\Project 2/index.html"><i class="fa fa-home" style="padding-right: 5px" aria-hidden="true"></i>Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Offers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Gallery</a>
+        </li>
+      </ul>
+      <div id="id01" class="cont_principal">
+
+  <div class="cont_centrar">
+  	<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <div class="cont_login">
+    <form action="">
+    <div class="cont_tabs_login">
+      <ul class='ul_tabs'>
+      	 
+        <li class="active"><a href="#" onclick="sign_in()">SIGN IN</a>
+
+        <span class="linea_bajo_nom"></span>
+        </li>
+        <li><a href="#up" onclick="sign_up()">SIGN UP</a><span class="linea_bajo_nom">
+        	
+        </span>
+        </li>
+      </ul>
+      </div>
+  <div class="cont_text_inputs">
+      <input type="text" class="input_form_sign " placeholder="NAME" name="name_us" />
+    
+    <input type="text" class="input_form_sign d_block active_inp" placeholder="EMAIL" name="emauil_us" />
+
+    <input type="password" class="input_form_sign d_block  active_inp" placeholder="PASSWORD" name="pass_us" />  
+   <input type="password" class="input_form_sign" placeholder="CONFIRM PASSWORD" name="conf_pass_us" />
+    
+    <a href="#" class="link_forgot_pass d_block" >Forgot Password ?</a>    
+<div class="terms_and_cons d_none">
+    <p><input type="checkbox" name="terms_and_cons" /> <label for="terms_and_cons">Accept  Terms and Conditions.</label></p>
+  
+    </div>
+      </div>
+<div class="cont_btn">
+  <button class="btn_sign">SIGN IN</button>
+    
+      
+      </div>
+      
+    </form>
+    </div>
+    
+  </div>
+  
+
+</div>
+    <i style="font-size: 27px;" class="fa fa-shopping-cart" aria-hidden="true"></i> <button class="signup"  onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign up</button>
+
+    </div>
+  </div>
+
+</nav>
+<br>
+
+
+	<header class="border-0" > <h1 style="margin-left: 20px;">Starters</h1><hr>
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="momos.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Momos</h3><br>
+           <div class="container">
+  
+  <div class="quantity"> <strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 90</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="noodles.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Noodles</h3><br>
+    <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 60</p>
+    	<a href="E:\Project 2\checkout.html"><button type="button" class="btn-outline-success">Buy</button></a>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="chiili potato.png" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Chilli Potato</h3><br>
+    <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 90</p>
+    <a href="E:\Project 2\checkout.html"><button type="button" class="btn-outline-success">Buy</button></a>
+  </div>
+</div>
+	<div  class="card" style="width: 18rem;">
+  <img class="card-img-top" src="spring roll.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Spring Roll</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 80</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+</header>
+<header class="border-0" class="card"><h1 style="margin-left: 20px;">Sweets</h1><hr>
+	<div  class="card" style="width: 18rem;">
+  <img class="card-img-top" src="rasgulla.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Rosgulla</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 80</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Rasmalai.webp" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Rasmalai</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 90</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+
+
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="kaju_barfi.gif" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Kaju Barfi</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 860</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="ghewar.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Ghewar</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 360</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+
+</header><br><br>
+
+<header class="border-0" class="card"><h1 style="margin-left: 20px;">Special Chaap</h1><hr>
+	<div  class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Achari Chaap.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Achari Chaap</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 180</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Afghani chaap.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Afghani Chaap</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 190</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Tandoori chaap.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Tandoori Chaap</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 190</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Malai Chaap.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Malai Chaap</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 190</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+</header>
+
+<header class="border-0" class="card"><h1 style="margin-left: 20px;">Non-Veg</h1><hr>
+	<div  class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Chicken lolipop.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Chicken lolipop</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 230</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Chiken Tikka.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Chicken Tikka</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 190</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Chicken Kabab.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h3>Chicken Kabab</h3><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 160</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="Chicken Tangadi.jpg" alt="Card image cap">
+  <div class="card-body">
+  	<h4>Chicken tangadi</h4><br>
+      <div class="container">
+  
+  <div class="quantity"><strong><p class="qty"> Qty: &nbsp </strong></p>
+    <a href="#" class="quantity__minus"><span>-</span></a>
+    <input name="quantity" type="text" class="quantity__input" value="1">
+    <a href="#" class="quantity__plus"><span>+</span></a>
+  </div>
+  
+</div>
+    <p class="card-text"><STRONG>INR. 290</p>
+    	<button type="button" class="btn-outline-success">Buy</button>
+  </div>
+</div>
+</header>
+<br>
+<div>
+     
+</div>
+<div class="allheader" style="width: 100%">
+		<div class="overview" id="dt">
+		<h5><img src="moon 2.png" height="20px" width="20px"> Moon Knight cafe</h5><br><hr>
+		
+	</div>
+	<div class="Download" id="dt">
+		<h2> Get to know us</h2><hr>
+    <div class="know_us">
+		<p><STRONG>Address:</strong> Oppo. KIET Institution, Muradnagar</p>
+		<p><strong>Mobile No.:</strong> 95*****09</p>
+	</div></div>
+
+	<div class="Links" id="dt">
+		<h2>Useful Links</h2><hr>
+		<a class="imgs" href="#">About us</a><br>
+		<a class="imgs" href="#">Feedback</a><br>
+		<a class="imgs" href="#">Privacy Policy</a><br>
+		
+	</div>
+	<div class="Media" id="dt">
+		<h2>Follow us</h2><hr>
+		<a class="imgs" href="#">Facebook</a><br>
+		<a class="imgs" href="#">Twitter</i></a><br>
+		<a class="imgs" href="#">Instagram</a><br>
+		
+
+	</div>
+          </div>
+          <div class="copyright">
+          	<p style="font-family: serif;"><strong>Moon Knight Cafe</p>
+          </div>
+     
+
+</body>
+</html>

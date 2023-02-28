@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout</title>
+  <link rel="stylesheet" type="text/css" href="E:\Project 2/Checkout.css">
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="E:\Project 2/Index.css">
+</head>
+<body>
+  <script type="text/javascript" src="index.js"></script> 
+
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: darkturquoise;margin-left: -28px;margin-right: -28px;position: relative;top: -28px;">
+  <div class="container-fluid">
+   
+       <div class="top" style="margin-left: 30px;">
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+  
+  </div>
+  <span class="open" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+  </div>
+  <p class="navbar-brand" href="#" style="color: white; font-size: 25px; padding-left: 30px;">
+      <img src="moon 2.png" height="20px" width="20px"\> Moon knight cafe</p>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <div class="navbar-nav" style="margin-left: -30px;">
+      <a class="nav-item nav-link active" href="E:\Project 2/index.html">Home <span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link" href="#">Features</a>
+      <a class="nav-item nav-link" href="#">Pricing</a>
+      <a class="nav-item nav-link disabled" href="#">Disabled</a>
+    </div>
+    <p style="color: white;position: relative;left: 210px;top: 5px;cursor: pointer;">Cart</p><i style="font-size: 27px; " class="fa fa-shopping-cart" ></i>
+  </div>
+</nav>
+
+  <div class="row">
+  <div class="col-75">
+    <div class="containere">
+      <form action="">
+
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            
+             <input type="radio" name="barcode" value="Payment">
+             <label>Barcode</label> <br><br>
+          <img src="barcode.jpeg" width=200px height="200px"><br><br>
+          <input type="radio" name="barcode" value="Payment">
+          <label>Cash on Delivery</label> <br>
+           
+
+            <div class="row">
+              <div class="col-50">
+                
+              </div>
+              <div class="col-50">
+              
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+       <button class="btne"> <a href="E:\Project 2\loader.html">Proceed to checkout</a></button>
+      </form>
+    </div>
+  </div>
+
+  <div class="col-25">
+    <div class="containere" >
+      <h4>Cart
+        <span class="price" style="color:black">
+          <i class="fa fa-shopping-cart"></i>
+          <b>4</b>
+        </span>
+      </h4>
+      
+      <p><a href="#">Product 1</a> <span class="price">60</span></p>
+    
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>60</b></span></p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
