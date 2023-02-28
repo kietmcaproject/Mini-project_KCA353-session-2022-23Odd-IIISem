@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Wrapper{
+    
+    padding: 1%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.text-center{
+    text-align: center;
+
+}
+
+.clearfix{
+    float: none;
+    clear: both;
+}
+
+
+.tbl-full{
+    width: 100%;
+}
+
+.tbl-30{
+    width: 30%;
+}
+
+table tr th{
+    border-bottom: 1px solid black;
+    padding: 1%;
+    text-align: left;
+}
+
+table tr td{
+    padding: 1%;
+}
+
+.btn-primary{
+    background-color: #3741fad5;
+    padding: 1%;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: #3742fa;
+}
+
+.btn-secondary{
+    background-color: #219652da;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-secondary:hover{
+    background-color: #219651fd;
+}
+
+.btn-danger{
+    background-color: #ed5249;
+    padding: 1%;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn-danger:hover{
+    background-color: #c91d12;
+}
+
+.success{
+    color: #219651fd;
+}
+
+.error{
+    color: #c91d12;
+}
+
+
+
+/* Menu section */
+.menu{
+    border-bottom: 1px solid gray;
+}
+
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.menu ul li a:hover{
+    color: #ff4757;
+}
+
+
+/* main content */
+
+.main-content{
+    background-color: #f1f2f6;
+    padding: 3% 0;
+}
+
+.col-4{
+    width: 18%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    float: left;
+}
+
+/* footer */
+
+.footer{
+    background-color: #2b4a47ed;
+    color: white;
+
+}
+
+
+/* For login  */
+
+.login{
+    border: 1px solid red;
+    width: 20%;
+    margin: 10% auto;
+    padding: 2%;
+}
