@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slide Navbar</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+   
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form action="student.php" method="post">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="UserName" placeholder="UserName" required="">
+					<input type="email" name="Email" placeholder="Email" required="">
+					<input type="password" name="Password" placeholder="Password" required="">
+					<button name="submit">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form method="post" action="Student_login.php">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="email" name="Email" placeholder="email" required="">
+					<input type="password" name="Password" placeholder="password" required="">
+					<button name="done">Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>
+
+ 

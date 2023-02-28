@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact Us</title>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+</style>
+</head>
+<body>
+  
+  
+
+<div class="about-section">
+<a href="https://www.kiet.edu/placement-records" style="color: white;"> <h1>About Us Page</h1></a>
+  <p>Campus placements provide the students with a foot-in- the-door opportunity,<br> enabling them to start off their career right after they have completed their course curriculum.</p>
+  <p>Furthermore, they get to interact and engage with the industry professionals during the placement drives,<br>which further help lay a foundation for <br>their prospective career in the future as 
+    they familiarise with potential contacts from their chosen career field</p>
+</div>
+
+<h2 style="text-align:center">MODULES</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      
+      <div class="container">
+        <h2>ADMIN</h2>
+        <!-- <p class="title">CEO & Founder</p> -->
+        <p><ul>
+            <li>
+               a.Dashboard: In this section, admin can see all detail in brief like Total 
+               Company Registered, Total User (Candidates) Registered and Total 
+               Vacancy Listed. <br>
+               b. Total Registered Company: In this section, admin can view detail of 
+               registered company.<br> 
+               c. Total Registered Users: In this section, admin can view detail of users. <br>
+               d. Pages: In this section, the admin can manage about us and contact us 
+               pages. <br>
+               e. Reports: In this section admin can view how many company has been 
+               registered in particular period and also view how many vacancy counts 
+               listed by particular company in particular periods.
+            
+            </li>
+            
+         </ul></p>
+         <a href="ContactUs.html"><p ><button class="button">Contact</button></p></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>STUDENT</h2>
+        <!-- <p class="title">Art Director</p> -->
+        <p  >The first student should log in to the system by entering PRN as 
+            their user name and password. Students can able to update his 
+            information such as name, branch, year, aggregate marks, 
+            contact number, email, etc. by clicking on Update Details option 
+            and also upload their Resume. 
+            The change password field is used by the student if he needs to 
+            change his password as same in the admin module. After 
+            completing a task successfully by click on the Logout, the 
+            student can successfully log out from the system.</p>
+            <a href="ContactUs.html"><p ><button class="button">Contact</button></p></a>
+     
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <div class="container">
+        <h2>COMPANY</h2>
+        
+        <p>The Company enter his user_id and Password and can 
+            login to his home page where he is having options to 
+            update the details and have a facility to post their 
+            vacancy.</p>
+        <p> Users have the privilege to see the students who are 
+            applied for that vacancy and view/download the details of 
+            accepted students</p>
+        <a href="ContactUs.html"><p ><button class="button">Contact</button></p></a>
+        
+       
+      </div>
+    </div>
+  </div>
+  <a href="LandingPage.html"  <input type="button" value="ReturnBack"> Back></a>
+</div>
+
+</body>
+</html>

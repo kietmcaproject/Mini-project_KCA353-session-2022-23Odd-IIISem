@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hiring Company</title>
+
+
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        h2{
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color: blue;
+ text-align: center; 
+ text-decoration: underline
+}
+table{
+ font-family: verdana; 
+ color:white; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background: linear-gradient(to bottom, #33ccff 0%, blue 100%);  
+ border: 4px solid #000000;
+ border-style: double;
+ height: 90px;
+  
+}
+input[type=text], input[type=url], input[type=number]{
+ width: 70%;
+ padding: 6px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+
+
+    </style>
+</head>
+<body>
+   
+    
+    <form  method="post" action="companyDetail.php">
+        <table align="center">
+            <h2>Company Details</h2>
+        <tr>
+            <td> <label>About Company</label></td>
+            <td>   <textarea name="Details" rows="10" cols="50" name=""></textarea></td> 
+            
+        </tr>
+       <tr>
+        <td>
+            <label>Eligibility Criteria</label> </td>
+          <td>  <textarea name="Eligibilty" rows="10" cols="50"></textarea></td>
+       
+       </tr>
+       <tr>
+        <td>
+            <label> Google form Link</label>
+           
+        </td>
+        <td>
+            <input type="url" name="Form">
+        </td>
+       </tr>
+
+       <tr>
+        <td>
+            <label> Time of Submission  Form</label>
+        </td>
+        <td>
+
+            <input type="date" name="Date">
+        </td>
+       </tr>
+       <tr>
+        <td>
+        <input type="submit" name="submit" >
+        </td>
+       </tr>
+
+    </table>   
+    </form> 
+</body>
+</html>

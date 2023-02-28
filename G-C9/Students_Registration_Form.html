@@ -1,0 +1,184 @@
+<html>
+<head>
+<title>Student Registration Form </title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+   
+h2{
+ font-family: Sans-serif; 
+ font-size: 24px;     
+ font-style: normal; 
+ font-weight: bold; 
+ color: blue;
+ text-align: center; 
+ text-decoration: underline
+}
+table{
+ font-family: verdana; 
+ color:white; 
+ font-size: 16px; 
+ font-style: normal;
+ font-weight: bold;
+ background: linear-gradient(to bottom, #33ccff 0%, blue 100%);  
+ border-collapse: collapse; 
+ border: 4px solid #000000;
+ border-style: dashed;
+  
+}
+table.inner{
+ border: 10px
+}
+input[type=text], input[type=email], input[type=number]{
+ width: 50%;
+ padding: 6px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+input[type=submit], input[type=reset]{
+ width: 15%;
+ padding: 8px 12px;
+ margin: 5px 0;
+ box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">Campus Placement</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="LandingPage.html">Home</a></li>
+            <li><a href="ove.html">Overview</a></li>
+            <li><a href="ContactUs.html">Message</a></li>
+            
+              <li><a href="Placement Policy 2023_B.Tech_MCA_4th Mar'22.pdf">Placement Policy File</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Link <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="Placement_List_2021_Batc.pdf">2021 Batch</a></li>
+                  <li><a href="Placement_List_2020_Batc.pdf">2020 Batch</a></li>
+                  <li><a href="Placement_List_2019_Batc.pdf">2019 Batch</a></li>
+                 
+                </ul>
+            
+          </ul>
+        </div>
+      </nav>
+      <h2>Student Registration Form </h3>
+        <form action="Student_Registartion_form.php" method="post">
+
+       
+        <table align="center" cellpadding = "10">
+        <!--------------------- First Name ------------------------------------------>
+        <tr>
+        <td>First Name</td>
+        <td><input type="text" name="FirstName" maxlength="50"  />
+        (Max 50 Characters Allowed)
+        </td>
+        </tr>
+        <!------------------------ Last Name --------------------------------------->
+        <tr>
+        <td>Last Name</td>
+        <td><input type="text" name="LastName" maxlength="50" />
+        (Max 50 Characters Allowed)
+        </td>
+        </tr>
+        <!-------------------------- Email ID ------------------------------------->
+        <tr>
+        <td>Email ID</td>
+        <td><input type="email" name="EmailId" maxlength="100" /></td>
+        </tr>
+        <!-------------------------- Mobile Number ------------------------------------->
+        <tr>
+        <td>Mobile Number</td>
+        <td>
+        <input type="text" name="MobileNo" maxlength="10" />
+        (10 Digits Allowed)
+        </td>
+        </tr>
+        <!---------------------- Gender ------------------------------------->
+        <tr>
+        <td>Gender</td>
+        <td>
+        <input type="radio" name="Gender" value="Male" />
+        Male
+        <input type="radio" name="Gender" value="Female" />
+        Female
+        </td>
+        </tr>
+        <!--------------------------Date Of Birth----------------------------------->
+        <tr>
+        <td>Date of Birth(DOB)</td>
+        <td>
+        <input type="Date" name="DOB">
+        </td>
+        </tr>
+        <!------------------------- Address ---------------------------------->
+        <tr>
+        <td>Address<br /><br /><br /></td>
+        <td><textarea name="Address" rows="10" cols="50"></textarea></td>
+        </tr>
+        <!-------------------------- City ------------------------------------->
+        <tr>
+        <td>City</td>
+        <td><input type="text" name="City" maxlength="50" />
+        (Max 50 Characters Allowed)
+        </td>
+        </tr>
+        <!----- -------------------- Pin Code-------------------------------------->
+        <tr>
+        <td>Pin Code</td>
+        <td><input type="Number" name="Pincode" maxlength="6" />
+        (Max 6 Numbers Allowed)
+        </td>
+        </tr>
+        <!---------------------------- State ----------------------------------->
+        <tr>
+        <td>State</td>
+        <td><input type="text" name="State" maxlength="50" />
+        (Max 50 Characters Allowed)
+        </td>
+        </tr>
+        <!------------------------------ Country --------------------------------->
+        <tr>
+        <td>Country</td>
+        <td><input type="text" name="Country" placeholder="India" /></td>
+        </tr>
+        
+        <!-----------------------Qualification--------------------------------------
+        <tr>
+        <td>Qualification <br /><br /><br /></td>
+        <td>
+        <br/>
+        
+        <input type="checkbox" name="Graduation" value="Graduation" />
+        Graduation(Bachelors)<br/>
+        <input type="checkbox" name="PostGraduation" value="Post Graduation" />
+        Post Graduation(Masters)<br/>
+       
+        </td>
+        </tr>
+        <!---------------------------- Courses ----------------------------------
+        <tr>
+        <td>Courses<br />Applied For</td>
+        <td>
+       
+        <input  type="radio" name="CourseMCA" value="BCA">
+        MCA(Master of Computer Applications)<br>
+       
+        </td>
+        </tr>-->
+        <!----------------------- Submit and Reset ------------------------------->
+        <tr>
+        <td colspan="2" align="center">
+        <input type="submit" value="Submit" name="submit">
+        <input type="reset" value="Reset">
+        </td>
+        </tr>
+        </table>
+        </form>
+        </body>
+        </html>
