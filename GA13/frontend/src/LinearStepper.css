@@ -1,0 +1,9 @@
+.box {
+    direction: rtl;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .text{
+    font-size: small;
+  }
+
