@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Contact Form - PHP/MySQL Demo Code</title>
+</head>
+
+<body>
+<!-- <fieldset>
+<legend>Contact Form</legend>
+<form name="frmContact" method="post" action="contact.php">
+<p>
+<label for="Name">Name </label>
+<input type="text" name="txtName" id="txtName">
+</p>
+<p>
+<label for="email">Email</label>
+<input type="text" name="txtEmail" id="txtEmail">
+</p>
+<p>
+<label for="phone">Phone</label>
+<input type="text" name="txtPhone" id="txtPhone">
+</p>
+<p>
+<label for="message">Message</label>
+<textarea name="txtMessage" id="txtMessage"></textarea>
+</p>
+<p>&nbsp;</p>
+<p>
+<input type="submit" name="Submit" id="Submit" value="Submit">
+</p>
+</form>
+</fieldset> -->
+<h3 class="sub-heading"> order now </h3>
+<h1 class="heading"> free and fast </h1>
+
+<form name= "frmorder" action="Mysql.php" method="post">
+
+    <div class="inputBox">
+        <div class="input">
+            <span>id</span>
+            <input type="text" placeholder="id">
+        </div>
+        <div class="input">
+            <span>your name</span>
+            <input type="text" placeholder="enter your name">
+        </div>
+        <div class="input">
+            <span>your number</span>
+            <input type="number" placeholder="enter your number">
+        </div>
+    </div>
+    <div class="inputBox">
+        <div class="input">
+            <span>your order</span>
+            <input type="text" placeholder="enter tiffin name">
+        </div>
+    </div>
+    <div class="inputBox">
+        <div class="input">
+            <span>Quantity</span>
+            <input type="number" placeholder="No of tiffin">
+        </div>
+    </div>
+    <div class="inputBox">
+        <div class="input">
+            <span>your address</span>
+            <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+    <input type="submit" value="order now" class="btn">
+
+</form>
+</body>
+</html>
